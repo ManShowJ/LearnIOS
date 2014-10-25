@@ -14,6 +14,7 @@
 		6FCCFC7119FBA0A000363342 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FCCFC7019FBA0A000363342 /* Images.xcassets */; };
 		6FCCFC7419FBA0A000363342 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FCCFC7219FBA0A000363342 /* LaunchScreen.xib */; };
 		6FCCFC8019FBA0A000363342 /* LearnIOSHelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCFC7F19FBA0A000363342 /* LearnIOSHelloWorldTests.m */; };
+		6FCCFC8A19FBA60500363342 /* coder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FCCFC8919FBA60500363342 /* coder.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6FCCFC7919FBA0A000363342 /* LearnIOSHelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnIOSHelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCCFC7E19FBA0A000363342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FCCFC7F19FBA0A000363342 /* LearnIOSHelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnIOSHelloWorldTests.m; sourceTree = "<group>"; };
+		6FCCFC8919FBA60500363342 /* coder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coder.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		6FCCFC6319FBA0A000363342 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6FCCFC8919FBA60500363342 /* coder.jpg */,
 				6FCCFC6419FBA0A000363342 /* Info.plist */,
 				6FCCFC6519FBA0A000363342 /* main.m */,
 			);
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FCCFC6F19FBA0A000363342 /* Main.storyboard in Resources */,
+				6FCCFC8A19FBA60500363342 /* coder.jpg in Resources */,
 				6FCCFC7419FBA0A000363342 /* LaunchScreen.xib in Resources */,
 				6FCCFC7119FBA0A000363342 /* Images.xcassets in Resources */,
 			);
