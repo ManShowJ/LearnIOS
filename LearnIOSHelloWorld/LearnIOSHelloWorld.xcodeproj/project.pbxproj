@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FA5734819FBF0C400F2CD5D /* fighting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FA5734719FBF0C400F2CD5D /* fighting.jpg */; };
 		6FCCFC6619FBA0A000363342 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCFC6519FBA0A000363342 /* main.m */; };
 		6FCCFC6919FBA0A000363342 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCFC6819FBA0A000363342 /* AppDelegate.m */; };
 		6FCCFC6C19FBA0A000363342 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCFC6B19FBA0A000363342 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FA5734719FBF0C400F2CD5D /* fighting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fighting.jpg; sourceTree = "<group>"; };
 		6FCCFC6019FBA0A000363342 /* LearnIOSHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnIOSHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCCFC6419FBA0A000363342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FCCFC6519FBA0A000363342 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		6FCCFC6319FBA0A000363342 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6FA5734719FBF0C400F2CD5D /* fighting.jpg */,
 				6FCCFC8919FBA60500363342 /* coder.jpg */,
 				6FCCFC6419FBA0A000363342 /* Info.plist */,
 				6FCCFC6519FBA0A000363342 /* main.m */,
@@ -202,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA5734819FBF0C400F2CD5D /* fighting.jpg in Resources */,
 				6FCCFC6F19FBA0A000363342 /* Main.storyboard in Resources */,
 				6FCCFC8A19FBA60500363342 /* coder.jpg in Resources */,
 				6FCCFC7419FBA0A000363342 /* LaunchScreen.xib in Resources */,
@@ -416,6 +420,7 @@
 				6FCCFC8519FBA0A000363342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FCCFC8619FBA0A000363342 /* Build configuration list for PBXNativeTarget "LearnIOSHelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +429,7 @@
 				6FCCFC8819FBA0A000363342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D3D8037A-4C74-40C9-9701-25219F56CCBC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LearnIOSProgram</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E255A36A2A9CA449E9DDDC7B2A8CED1BE2E66E6F</key>
+		<string>https://github.com/jiangwave/LearnIOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LearnIOSProgram.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E255A36A2A9CA449E9DDDC7B2A8CED1BE2E66E6F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jiangwave/LearnIOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E255A36A2A9CA449E9DDDC7B2A8CED1BE2E66E6F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E255A36A2A9CA449E9DDDC7B2A8CED1BE2E66E6F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LearnIOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
