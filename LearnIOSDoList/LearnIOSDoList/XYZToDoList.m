@@ -7,26 +7,51 @@
 //
 
 #import "XYZToDoList.h"
+#import "XYZToDoItem.h"
 
 @interface XYZToDoList ()
+
+@property NSMutableArray *toDoItems;
 
 @end
 
 @implementation XYZToDoList
 
 -(IBAction)unwindToDoList:(UIStoryboardSegue *)segue{
-    
+    XYZAddToDoItem *source = [segue sourceViewController];
+    XYZToDoItem *item = source.toDoItem;
+    if (item != nil) {
+        [self.toDoItems addObject:item];
+        [self.tableView reloadData];
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // Do any additional setup after loading the view, typically from a nib.
+    self.toDoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
 }
+
+- (void)loadInitialData
+{
+    XYZToDoItem *item1 = [[XYZToDoItem alloc] init];
+    item1.ItemName = @"学习英文资料";
+    [self.toDoItems addObject:item1];
+    
+    XYZToDoItem *item2 = [[XYZToDoItem alloc] init];
+    item2.ItemName = @"阅读技术书籍";
+    [self.toDoItems addObject:item2];
+    
+    XYZToDoItem *item3 = [[XYZToDoItem alloc] init];
+    item3.ItemName = @"练习烹饪料理";
+    [self.toDoItems addObject:item3];
+    
+    XYZToDoItem *item4 = [[XYZToDoItem alloc] init];
+    item4.ItemName = @"整理环境卫生";
+    [self.toDoItems addObject:item4];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -35,27 +60,39 @@
 
 #pragma mark - Table view data source
 
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.toDoItems count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"ListPrototypeCell";
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    XYZToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = toDoItem.ItemName;
+    
+    if (toDoItem.completed)
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     // Configure the cell...
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -100,5 +137,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    XYZToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
+    tappedItem.completed = !tappedItem.completed;
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    
+}
 
 @end

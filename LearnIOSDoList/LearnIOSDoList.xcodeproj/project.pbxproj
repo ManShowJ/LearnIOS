@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0454331A03C6AF004312DC /* XYZToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0454321A03C6AF004312DC /* XYZToDoItem.m */; };
 		6FA28ECF19FE8217004AA996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA28ECE19FE8217004AA996 /* main.m */; };
 		6FA28ED219FE8217004AA996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA28ED119FE8217004AA996 /* AppDelegate.m */; };
 		6FA28ED519FE8217004AA996 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA28ED419FE8217004AA996 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F0454311A03C6AF004312DC /* XYZToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZToDoItem.h; path = ../XYZToDoItem.h; sourceTree = "<group>"; };
+		6F0454321A03C6AF004312DC /* XYZToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZToDoItem.m; path = ../XYZToDoItem.m; sourceTree = "<group>"; };
 		6FA28EC919FE8217004AA996 /* LearnIOSDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnIOSDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA28ECD19FE8217004AA996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FA28ECE19FE8217004AA996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 		6FA28ECB19FE8217004AA996 /* LearnIOSDoList */ = {
 			isa = PBXGroup;
 			children = (
+				6F0454311A03C6AF004312DC /* XYZToDoItem.h */,
+				6F0454321A03C6AF004312DC /* XYZToDoItem.m */,
 				6FA28ED019FE8217004AA996 /* AppDelegate.h */,
 				6FA28ED119FE8217004AA996 /* AppDelegate.m */,
 				6FA28ED319FE8217004AA996 /* ViewController.h */,
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0454331A03C6AF004312DC /* XYZToDoItem.m in Sources */,
 				6FA4420F19FFD29B000203F3 /* XYZAddToDoItem.m in Sources */,
 				6FA28ED519FE8217004AA996 /* ViewController.m in Sources */,
 				6FA28ED219FE8217004AA996 /* AppDelegate.m in Sources */,

@@ -9,10 +9,25 @@
 #import "XYZAddToDoItem.h"
 
 @interface XYZAddToDoItem ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
 @implementation XYZAddToDoItem
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if (sender != self.doneButton) {
+        return;
+    }
+    
+    if (self.textField.text.length > 0) {
+        self.toDoItem = [[XYZToDoItem alloc] init];
+        self.toDoItem.ItemName = self.textField.text;
+        self.toDoItem.completed = NO;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
