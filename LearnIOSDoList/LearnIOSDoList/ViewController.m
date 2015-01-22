@@ -18,6 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+- (IBAction)calcHandle {
+}
+- (IBAction)calculatorHandle:(UIButton *)sender {
+}
+- (IBAction)leftBtnOnClick:(UIButton *)sender {
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
